@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: ninja-warrior-online
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
